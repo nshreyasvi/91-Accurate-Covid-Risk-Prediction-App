@@ -10,5 +10,5 @@ Based on risk factor, the user can either visit the doctor or stay at home to av
 
 Link to pretrained model: https://drive.google.com/file/d/1LpNcmREdMrYKRCkulVNn-J_iIXQsIi2L/view?usp=sharing
 
-![neural_network_plot](https://github.com/nshreyasvi/covid_machine_learning_model/blob/main/c5.0.png)
-![gui](https://github.com/nshreyasvi/covid_machine_learning_model/blob/main/gui.PNG)
+![neural_network_plot](https://github.com/nshreyasvi/covid_machine_learning/blob/main/c5.0.png)
+![gui](https://github.com/nshreyasvi/covid_machine_learning/blob/main/gui.PNG)

@@ -1,6 +1,6 @@
 rm(list=ls())
 
-ADOS <- read.csv("C:/Users/shrey/Downloads/covid_machine_learning_model/COVID-19_Case_Surveillance_Public_Use_Data.csv", sep=',', header = T)
+ADOS <- read.csv("C:/Users/shrey/Downloads/covid_machine_learning/COVID-19_Case_Surveillance_Public_Use_Data.csv", sep=',', header = T)
 
 ADOS_1 <- ADOS
 
