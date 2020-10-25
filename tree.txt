@@ -1,0 +1,487 @@
+C5.0 [Release 2.07 GPL Edition]  	Sun Oct 18 00:31:18 2020
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 3360797 cases (23 attributes) from undefined.data
+
+2 attributes winnowed
+Estimated importance of remaining attributes:
+
+      4%  medcond_yn
+      3%  cdc_report_dt
+      2%  age_group80+ Years
+      1%  age_group70 - 79 Years
+      1%  Race.and.ethnicity..combined.Unknown
+     <1%  sexMale
+     <1%  age_group60 - 69 Years
+     <1%  Race.and.ethnicity..combined.White, Non-Hispanic
+     <1%  age_group50 - 59 Years
+     <1%  age_group40 - 49 Years
+     <1%  Race.and.ethnicity..combined.Black, Non-Hispanic
+     <1%  Race.and.ethnicity..combined.Asian, Non-Hispanic
+     <1%  Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic
+     <1%  age_group20 - 29 Years
+     <1%  age_group10 - 19 Years
+     <1%  sexUnknown
+     <1%  age_group30 - 39 Years
+     <1%  age_groupUnknown
+     <1%  Race.and.ethnicity..combined.Hispanic/Latino
+     <1%  Race.and.ethnicity..combined.Native Hawaiian/Other Pacific Islander, Non-Hispanic
+
+Decision tree:
+
+age_group80+ Years > 0:
+:...medcond_yn <= 0:
+:   :...Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0: 0 (125351.4/39308.2)
+:   :   Race.and.ethnicity..combined.Asian, Non-Hispanic > 0:
+:   :   :...cdc_report_dt <= 2.020042e+007:
+:   :       :...cdc_report_dt <= 2.02004e+007: 2 (143/87)
+:   :       :   cdc_report_dt > 2.02004e+007:
+:   :       :   :...sexMale <= 0: 1 (139/81)
+:   :       :       sexMale > 0: 2 (122/69)
+:   :       cdc_report_dt > 2.020042e+007:
+:   :       :...sexMale <= 0: 0 (984.1/486)
+:   :           sexMale > 0:
+:   :           :...cdc_report_dt > 2.020051e+007: 0 (419/223)
+:   :               cdc_report_dt <= 2.020051e+007:
+:   :               :...cdc_report_dt <= 2.020042e+007: 0 (32/17)
+:   :                   cdc_report_dt > 2.020042e+007: 1 (109/60)
+:   medcond_yn > 0:
+:   :...cdc_report_dt > 2.020063e+007:
+:       :...Race.and.ethnicity..combined.Asian, Non-Hispanic > 0:
+:       :   :...cdc_report_dt <= 2.020083e+007: 1 (121/76)
+:       :   :   cdc_report_dt > 2.020083e+007: 0 (24/10)
+:       :   Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0:
+:       :   :...Race.and.ethnicity..combined.Black, Non-Hispanic <= 0: 0 (9977.4/4544.1)
+:       :       Race.and.ethnicity..combined.Black, Non-Hispanic > 0:
+:       :       :...cdc_report_dt > 2.02008e+007: 0 (531.1/270)
+:       :           cdc_report_dt <= 2.02008e+007:
+:       :           :...cdc_report_dt > 2.020073e+007: 1 (197/118)
+:       :               cdc_report_dt <= 2.020073e+007:
+:       :               :...sexMale <= 0: 0 (375/215)
+:       :                   sexMale > 0: 1 (213/131)
+:       cdc_report_dt <= 2.020063e+007:
+:       :...Race.and.ethnicity..combined.Unknown > 0:
+:           :...cdc_report_dt <= 2.020042e+007: 1 (1883.1/1031.1)
+:           :   cdc_report_dt > 2.020042e+007:
+:           :   :...cdc_report_dt > 2.02005e+007: 0 (2593.1/979)
+:           :       cdc_report_dt <= 2.02005e+007:
+:           :       :...sexMale <= 0: 0 (649/315)
+:           :           sexMale > 0: 1 (355/197)
+:           Race.and.ethnicity..combined.Unknown <= 0:
+:           :...cdc_report_dt <= 2.020042e+007:
+:               :...cdc_report_dt > 2.020042e+007:
+:               :   :...sexMale <= 0: 1 (544/265)
+:               :   :   sexMale > 0: 2 (436/226)
+:               :   cdc_report_dt <= 2.020042e+007:
+:               :   :...cdc_report_dt > 2.020041e+007: 1 (333/210)
+:               :       cdc_report_dt <= 2.020041e+007:
+:               :       :...sexMale > 0: 2 (3575/1818)
+:               :           sexMale <= 0:
+:               :           :...cdc_report_dt <= 2.020032e+007: 1 (614.1/358)
+:               :               cdc_report_dt > 2.020032e+007: 2 (3376.1/1864)
+:               cdc_report_dt > 2.020042e+007:
+:               :...cdc_report_dt > 2.020061e+007:
+:                   :...cdc_report_dt <= 2.020061e+007: 2 (3212/1594)
+:                   :   cdc_report_dt > 2.020061e+007:
+:                   :   :...cdc_report_dt <= 2.020062e+007: 0 (1229.1/651)
+:                   :       cdc_report_dt > 2.020062e+007:
+:                   :       :...cdc_report_dt > 2.020062e+007: 1 (103/66)
+:                   :           cdc_report_dt <= 2.020062e+007:
+:                   :           :...sexMale <= 0: 1 (2044/1248)
+:                   :               sexMale > 0: 2 (1340/768)
+:                   cdc_report_dt <= 2.020061e+007: [S1]
+age_group80+ Years <= 0:
+:...age_group70 - 79 Years > 0:
+    :...medcond_yn <= 0: 0 (147374.8/33056.2)
+    :   medcond_yn > 0:
+    :   :...cdc_report_dt > 2.020062e+007: 0 (16417.5/5664.1)
+    :       cdc_report_dt <= 2.020062e+007:
+    :       :...Race.and.ethnicity..combined.Unknown > 0:
+    :           :...cdc_report_dt > 2.020042e+007: 0 (3228.1/1083)
+    :           :   cdc_report_dt <= 2.020042e+007:
+    :           :   :...cdc_report_dt <= 2.020033e+007:
+    :           :       :...cdc_report_dt <= 2.020032e+007: 0 (278.1/169)
+    :           :       :   cdc_report_dt > 2.020032e+007: 1 (498/265)
+    :           :       cdc_report_dt > 2.020033e+007:
+    :           :       :...sexMale <= 0: 0 (1042/533)
+    :           :           sexMale > 0:
+    :           :           :...cdc_report_dt > 2.020042e+007: 0 (159/82)
+    :           :               cdc_report_dt <= 2.020042e+007:
+    :           :               :...cdc_report_dt <= 2.020041e+007: 1 (623/342)
+    :           :                   cdc_report_dt > 2.020041e+007:
+    :           :                   :...cdc_report_dt <= 2.020042e+007: 0 (244/134)
+    :           :                       cdc_report_dt > 2.020042e+007: 1 (112/59)
+    :           Race.and.ethnicity..combined.Unknown <= 0:
+    :           :...cdc_report_dt <= 2.020043e+007:
+    :               :...cdc_report_dt <= 2.020033e+007: [S2]
+    :               :   cdc_report_dt > 2.020033e+007: [S3]
+    :               cdc_report_dt > 2.020043e+007:
+    :               :...cdc_report_dt > 2.020061e+007:
+    :                   :...cdc_report_dt <= 2.020061e+007: 1 (2676/1624)
+    :                   :   cdc_report_dt > 2.020061e+007:
+    :                   :   :...cdc_report_dt <= 2.020062e+007: 0 (1434.1/557)
+    :                   :       cdc_report_dt > 2.020062e+007: 1 (3077/1961)
+    :                   cdc_report_dt <= 2.020061e+007:
+    :                   :...cdc_report_dt > 2.020051e+007: 0 (5650.3/2716.1)
+    :                       cdc_report_dt <= 2.020051e+007: [S4]
+    age_group70 - 79 Years <= 0:
+    :...medcond_yn <= 0: 0 (2660226.8/119649.8)
+        medcond_yn > 0:
+        :...cdc_report_dt > 2.020042e+007:
+            :...age_group60 - 69 Years > 0:
+            :   :...cdc_report_dt > 2.020062e+007: 0 (24757.6/5317.4)
+            :   :   cdc_report_dt <= 2.020062e+007:
+            :   :   :...cdc_report_dt <= 2.020061e+007: [S5]
+            :   :       cdc_report_dt > 2.020061e+007:
+            :   :       :...cdc_report_dt <= 2.020061e+007: [S6]
+            :   :           cdc_report_dt > 2.020061e+007:
+            :   :           :...cdc_report_dt <= 2.020062e+007: 0 (2630.2/674)
+            :   :               cdc_report_dt > 2.020062e+007: [S7]
+            :   age_group60 - 69 Years <= 0:
+            :   :...age_group50 - 59 Years > 0:
+            :       :...cdc_report_dt > 2.020062e+007: 0 (28562.8/3961.4)
+            :       :   cdc_report_dt <= 2.020062e+007:
+            :       :   :...cdc_report_dt <= 2.020061e+007: 0 (21313.4/3604.4)
+            :       :       cdc_report_dt > 2.020061e+007:
+            :       :       :...cdc_report_dt > 2.020061e+007: 0 (7833.4/2461)
+            :       :           cdc_report_dt <= 2.020061e+007: [S8]
+            :       age_group50 - 59 Years <= 0:
+            :       :...age_group40 - 49 Years <= 0: 0 (101263.1/7101.4)
+            :           age_group40 - 49 Years > 0:
+            :           :...cdc_report_dt > 2.020062e+007: 0 (23642.5/2389.3)
+            :               cdc_report_dt <= 2.020062e+007:
+            :               :...cdc_report_dt <= 2.020061e+007: 0 (16707.2/1894.3)
+            :                   cdc_report_dt > 2.020061e+007:
+            :                   :...cdc_report_dt > 2.020061e+007: 0 (6293.3/1373)
+            :                       cdc_report_dt <= 2.020061e+007: [S9]
+            cdc_report_dt <= 2.020042e+007:
+            :...age_group60 - 69 Years > 0:
+                :...Race.and.ethnicity..combined.Unknown > 0: 0 (5226.3/2121)
+                :   Race.and.ethnicity..combined.Unknown <= 0: [S10]
+                age_group60 - 69 Years <= 0: [S11]
+
+SubTree [S1]
+
+Race.and.ethnicity..combined.Asian, Non-Hispanic > 0: 1 (420.1/213.1)
+Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0:
+:...sexMale > 0:
+    :...cdc_report_dt > 2.020043e+007:
+    :   :...cdc_report_dt <= 2.020052e+007: 1 (2141/1308)
+    :   :   cdc_report_dt > 2.020052e+007:
+    :   :   :...cdc_report_dt <= 2.020053e+007: 1 (523/218)
+    :   :       cdc_report_dt > 2.020053e+007:
+    :   :       :...cdc_report_dt <= 2.02006e+007: 1 (686/368)
+    :   :           cdc_report_dt > 2.02006e+007: 0 (179/107)
+    :   cdc_report_dt <= 2.020043e+007:
+    :   :...cdc_report_dt > 2.020043e+007: 2 (79/49)
+    :       cdc_report_dt <= 2.020043e+007:
+    :       :...Race.and.ethnicity..combined.Hispanic/Latino > 0:
+    :           :...cdc_report_dt <= 2.020043e+007: 2 (133/75)
+    :           :   cdc_report_dt > 2.020043e+007: 1 (51/22)
+    :           Race.and.ethnicity..combined.Hispanic/Latino <= 0: [S12]
+    sexMale <= 0:
+    :...cdc_report_dt <= 2.020043e+007:
+        :...Race.and.ethnicity..combined.White, Non-Hispanic > 0:
+        :   :...cdc_report_dt <= 2.020043e+007: 1 (1683/933)
+        :   :   cdc_report_dt > 2.020043e+007: 0 (81/46)
+        :   Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+        :   :...cdc_report_dt > 2.020042e+007: 1 (396/185)
+        :       cdc_report_dt <= 2.020042e+007: [S13]
+        cdc_report_dt > 2.020043e+007:
+        :...Race.and.ethnicity..combined.Black, Non-Hispanic > 0: 1 (754/438)
+            Race.and.ethnicity..combined.Black, Non-Hispanic <= 0:
+            :...cdc_report_dt > 2.020052e+007:
+                :...cdc_report_dt <= 2.020053e+007: 1 (1212.1/566.1)
+                :   cdc_report_dt > 2.020053e+007: 0 (974/471)
+                cdc_report_dt <= 2.020052e+007:
+                :...cdc_report_dt <= 2.02005e+007: 1 (305/168)
+                    cdc_report_dt > 2.02005e+007: [S14]
+
+SubTree [S2]
+
+Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+:...cdc_report_dt <= 2.020032e+007: 1 (996.1/566)
+:   cdc_report_dt > 2.020032e+007: 2 (522/314)
+Race.and.ethnicity..combined.White, Non-Hispanic > 0:
+:...cdc_report_dt <= 2.020032e+007: 0 (415/281)
+    cdc_report_dt > 2.020032e+007:
+    :...cdc_report_dt <= 2.020032e+007: 1 (322/192)
+        cdc_report_dt > 2.020032e+007: 2 (261/164)
+
+SubTree [S3]
+
+Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+:...sexMale <= 0:
+:   :...cdc_report_dt > 2.020042e+007:
+:   :   :...Race.and.ethnicity..combined.Hispanic/Latino <= 0: 1 (345/197)
+:   :   :   Race.and.ethnicity..combined.Hispanic/Latino > 0: 0 (163/92)
+:   :   cdc_report_dt <= 2.020042e+007:
+:   :   :...cdc_report_dt <= 2.020033e+007: 1 (78/36)
+:   :       cdc_report_dt > 2.020033e+007:
+:   :       :...cdc_report_dt > 2.020042e+007: 1 (274/150)
+:   :           cdc_report_dt <= 2.020042e+007:
+:   :           :...cdc_report_dt <= 2.020041e+007: 1 (1550.1/934.1)
+:   :               cdc_report_dt > 2.020041e+007: 0 (74/30)
+:   sexMale > 0:
+:   :...cdc_report_dt <= 2.020033e+007: [S15]
+:       cdc_report_dt > 2.020033e+007:
+:       :...cdc_report_dt <= 2.020041e+007: 2 (1714/976)
+:           cdc_report_dt > 2.020041e+007:
+:           :...cdc_report_dt <= 2.020042e+007:
+:               :...cdc_report_dt <= 2.020041e+007: 2 (171/96)
+:               :   cdc_report_dt > 2.020041e+007: 0 (95/53)
+:               cdc_report_dt > 2.020042e+007:
+:               :...cdc_report_dt <= 2.020042e+007: 2 (317/182)
+:                   cdc_report_dt > 2.020042e+007:
+:                   :...cdc_report_dt <= 2.020042e+007: 1 (472/283)
+:                       cdc_report_dt > 2.020042e+007: 2 (113/63)
+Race.and.ethnicity..combined.White, Non-Hispanic > 0:
+:...sexMale > 0:
+    :...cdc_report_dt <= 2.020041e+007:
+    :   :...cdc_report_dt <= 2.020033e+007: 0 (73/44)
+    :   :   cdc_report_dt > 2.020033e+007: 2 (1203/796)
+    :   cdc_report_dt > 2.020041e+007:
+    :   :...cdc_report_dt <= 2.020042e+007: 0 (81/39)
+    :       cdc_report_dt > 2.020042e+007: 1 (694/444)
+    sexMale <= 0:
+    :...cdc_report_dt <= 2.020033e+007: 0 (57/27)
+        cdc_report_dt > 2.020033e+007:
+        :...cdc_report_dt <= 2.020033e+007: 2 (79/46)
+            cdc_report_dt > 2.020033e+007:
+            :...cdc_report_dt > 2.020042e+007:
+                :...cdc_report_dt <= 2.020042e+007: 2 (82/48)
+                :   cdc_report_dt > 2.020042e+007: 0 (501/316)
+                cdc_report_dt <= 2.020042e+007:
+                :...cdc_report_dt > 2.020041e+007: 0 (202/119)
+                    cdc_report_dt <= 2.020041e+007:
+                    :...cdc_report_dt <= 2.020041e+007: 0 (352/225)
+                        cdc_report_dt > 2.020041e+007: 1 (435/263)
+
+SubTree [S4]
+
+Race.and.ethnicity..combined.Asian, Non-Hispanic > 0: 1 (123/70)
+Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0:
+:...Race.and.ethnicity..combined.Black, Non-Hispanic > 0: 1 (635/363)
+    Race.and.ethnicity..combined.Black, Non-Hispanic <= 0:
+    :...Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0: 1 (165/95)
+        Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0:
+        :...sexMale <= 0: 0 (1008/528)
+            sexMale > 0:
+            :...cdc_report_dt > 2.020043e+007: 0 (677/398)
+                cdc_report_dt <= 2.020043e+007:
+                :...cdc_report_dt <= 2.020043e+007: 1 (259/158)
+                    cdc_report_dt > 2.020043e+007: 2 (65/41)
+
+SubTree [S5]
+
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0: 0 (17700.3/4939.4)
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0:
+:...cdc_report_dt <= 2.020043e+007: 1 (138/80)
+    cdc_report_dt > 2.020043e+007: 0 (510/191)
+
+SubTree [S6]
+
+Race.and.ethnicity..combined.Unknown <= 0: 1 (3180/1832)
+Race.and.ethnicity..combined.Unknown > 0: 0 (508/219)
+
+SubTree [S7]
+
+Race.and.ethnicity..combined.Black, Non-Hispanic <= 0: 0 (3176.1/1685)
+Race.and.ethnicity..combined.Black, Non-Hispanic > 0:
+:...sexMale <= 0: 0 (575/370)
+    sexMale > 0: 1 (577/394)
+
+SubTree [S8]
+
+Race.and.ethnicity..combined.Unknown > 0: 0 (675/201)
+Race.and.ethnicity..combined.Unknown <= 0:
+:...sexMale <= 0: 0 (1327/672)
+    sexMale > 0: 1 (1524/824)
+
+SubTree [S9]
+
+Race.and.ethnicity..combined.Unknown > 0: 0 (511/132)
+Race.and.ethnicity..combined.Unknown <= 0:
+:...sexMale <= 0: 0 (901/369)
+    sexMale > 0: 1 (1005/483)
+
+SubTree [S10]
+
+Race.and.ethnicity..combined.White, Non-Hispanic > 0: 0 (4976/2506)
+Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+:...sexMale > 0:
+    :...cdc_report_dt <= 2.020041e+007:
+    :   :...cdc_report_dt > 2.020041e+007: 1 (727/422)
+    :   :   cdc_report_dt <= 2.020041e+007:
+    :   :   :...cdc_report_dt <= 2.02004e+007:
+    :   :       :...cdc_report_dt <= 2.020031e+007: 0 (53/30)
+    :   :       :   cdc_report_dt > 2.020031e+007: 1 (2222/1330)
+    :   :       cdc_report_dt > 2.02004e+007:
+    :   :       :...cdc_report_dt <= 2.020041e+007: 0 (164/98)
+    :   :           cdc_report_dt > 2.020041e+007: 1 (449/292)
+    :   cdc_report_dt > 2.020041e+007: [S16]
+    sexMale <= 0:
+    :...cdc_report_dt > 2.020041e+007:
+        :...cdc_report_dt <= 2.020042e+007: 0 (368/154)
+        :   cdc_report_dt > 2.020042e+007:
+        :   :...cdc_report_dt <= 2.020042e+007: 1 (264/153)
+        :       cdc_report_dt > 2.020042e+007: 0 (397/195)
+        cdc_report_dt <= 2.020041e+007:
+        :...cdc_report_dt <= 2.020033e+007:
+            :...cdc_report_dt > 2.020032e+007: 1 (501.3/227)
+            :   cdc_report_dt <= 2.020032e+007: [S17]
+            cdc_report_dt > 2.020033e+007:
+            :...Race.and.ethnicity..combined.Asian, Non-Hispanic > 0: 0 (176/92)
+                Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0:
+                :...Race.and.ethnicity..combined.Hispanic/Latino > 0:
+                    :...cdc_report_dt <= 2.020033e+007: 0 (153/81)
+                    :   cdc_report_dt > 2.020033e+007: 1 (694/429)
+                    Race.and.ethnicity..combined.Hispanic/Latino <= 0:
+                    :...cdc_report_dt > 2.020041e+007: 1 (376/210)
+                        cdc_report_dt <= 2.020041e+007:
+                        :...cdc_report_dt <= 2.020033e+007: 1 (145/91)
+                            cdc_report_dt > 2.020033e+007: 0 (807.3/489.3)
+
+SubTree [S11]
+
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0:
+:...age_group20 - 29 Years > 0: 0 (174.1/53.1)
+:   age_group20 - 29 Years <= 0:
+:   :...age_group10 - 19 Years > 0: 0 (38/10)
+:       age_group10 - 19 Years <= 0:
+:       :...sexMale <= 0:
+:           :...age_group50 - 59 Years <= 0: 0 (412.3/151.3)
+:           :   age_group50 - 59 Years > 0:
+:           :   :...cdc_report_dt > 2.02004e+007: 0 (221.2/113.2)
+:           :       cdc_report_dt <= 2.02004e+007:
+:           :       :...cdc_report_dt <= 2.020032e+007: 0 (21/7)
+:           :           cdc_report_dt > 2.020032e+007: 1 (102/50)
+:           sexMale > 0:
+:           :...cdc_report_dt > 2.020042e+007: 0 (97/39)
+:               cdc_report_dt <= 2.020042e+007:
+:               :...age_group30 - 39 Years <= 0: 1 (636/329)
+:                   age_group30 - 39 Years > 0:
+:                   :...cdc_report_dt <= 2.020033e+007: 1 (42/20)
+:                       cdc_report_dt > 2.020033e+007: 0 (83/37)
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0:
+:...sexMale <= 0: 0 (21494.2/5589.6)
+    sexMale > 0:
+    :...age_group20 - 29 Years > 0: 0 (1653/373)
+        age_group20 - 29 Years <= 0:
+        :...Race.and.ethnicity..combined.Unknown > 0: 0 (5616/1792)
+            Race.and.ethnicity..combined.Unknown <= 0:
+            :...Race.and.ethnicity..combined.White, Non-Hispanic > 0: 0 (4150/1373)
+                Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+                :...age_group10 - 19 Years > 0: 0 (152/41)
+                    age_group10 - 19 Years <= 0:
+                    :...age_group30 - 39 Years > 0:
+                        :...cdc_report_dt > 2.02004e+007: 0 (923/289)
+                        :   cdc_report_dt <= 2.02004e+007:
+                        :   :...cdc_report_dt > 2.020033e+007: 0 (284/122)
+                        :       cdc_report_dt <= 2.020033e+007:
+                        :       :...cdc_report_dt <= 2.020032e+007: 0 (141/65)
+                        :           cdc_report_dt > 2.020032e+007: 1 (242/127)
+                        age_group30 - 39 Years <= 0:
+                        :...cdc_report_dt > 2.020041e+007:
+                            :...age_group50 - 59 Years <= 0: 0 (625/240)
+                            :   age_group50 - 59 Years > 0:
+                            :   :...cdc_report_dt <= 2.020042e+007: 0 (337/135)
+                            :       cdc_report_dt > 2.020042e+007:
+                            :       :...cdc_report_dt <= 2.020042e+007: 1 (288/163)
+                            :           cdc_report_dt > 2.020042e+007: 0 (384/165)
+                            cdc_report_dt <= 2.020041e+007:
+                            :...age_group50 - 59 Years <= 0:
+                                :...cdc_report_dt > 2.020033e+007: 0 (1226/597)
+                                :   cdc_report_dt <= 2.020033e+007:
+                                :   :...cdc_report_dt <= 2.020032e+007: 0 (216/113)
+                                :       cdc_report_dt > 2.020032e+007: 1 (543/309)
+                                age_group50 - 59 Years > 0:
+                                :...cdc_report_dt <= 2.020033e+007: 1 (1040/565)
+                                    cdc_report_dt > 2.020033e+007:
+                                    :...cdc_report_dt > 2.020041e+007: 1 (580/307)
+                                        cdc_report_dt <= 2.020041e+007:
+                                        :...cdc_report_dt <= 2.020033e+007: 0 (159/71)
+                                            cdc_report_dt > 2.020033e+007:
+                                            :...cdc_report_dt <= 2.02004e+007: 1 (256/161)
+                                                cdc_report_dt > 2.02004e+007: 0 (1005/584)
+
+SubTree [S12]
+
+Race.and.ethnicity..combined.Black, Non-Hispanic <= 0: 1 (1067/599)
+Race.and.ethnicity..combined.Black, Non-Hispanic > 0:
+:...cdc_report_dt <= 2.020043e+007: 2 (165/88)
+    cdc_report_dt > 2.020043e+007: 1 (72/29)
+
+SubTree [S13]
+
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0: 2 (350/204)
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0: 1 (88/46)
+
+SubTree [S14]
+
+Race.and.ethnicity..combined.White, Non-Hispanic > 0: 0 (2565/1411)
+Race.and.ethnicity..combined.White, Non-Hispanic <= 0:
+:...cdc_report_dt <= 2.020051e+007: 1 (180/104)
+    cdc_report_dt > 2.020051e+007: 0 (225.1/128.1)
+
+SubTree [S15]
+
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0: 0 (75/43)
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0: 1 (11/1)
+
+SubTree [S16]
+
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic > 0: 1 (152/88)
+Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic <= 0:
+:...cdc_report_dt <= 2.020042e+007: 0 (383/225)
+    cdc_report_dt > 2.020042e+007:
+    :...cdc_report_dt <= 2.020042e+007: 1 (334/195)
+        cdc_report_dt > 2.020042e+007: 0 (402/238)
+
+SubTree [S17]
+
+Race.and.ethnicity..combined.Asian, Non-Hispanic <= 0: 0 (302/184)
+Race.and.ethnicity..combined.Asian, Non-Hispanic > 0: 1 (20/10)
+
+
+Evaluation on training data (3360797 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	   182 306649( 9.1%)   <<
+
+
+	     (a)     (b)     (c)     (d)    <-classified as
+	  ------  ------  ------  ------
+	 3026775   11443    2221            (a): class 0
+	  206334   19483    5844            (b): class 1
+	   54140   10847    7890            (c): class 2
+	   10475    3842    1503            (d): class 3
+
+
+	Attribute usage:
+
+	100.00%	medcond_yn
+	 100.00%	age_group80+ Years
+	 94.78%	age_group70 - 79 Years
+	 12.73%	cdc_report_dt
+	  9.75%	age_group60 - 69 Years
+	  6.52%	age_group50 - 59 Years
+	  4.72%	Race.and.ethnicity..combined.Asian, Non-Hispanic
+	  4.47%	age_group40 - 49 Years
+	  3.49%	Race.and.ethnicity..combined.Unknown
+	  2.99%	sexMale
+	  1.95%	Race.and.ethnicity..combined.Multiple/Other, Non-Hispanic
+	  1.31%	Race.and.ethnicity..combined.White, Non-Hispanic
+	  0.77%	Race.and.ethnicity..combined.Black, Non-Hispanic
+	  0.64%	age_group20 - 29 Years
+	  0.30%	age_group10 - 19 Years
+	  0.27%	age_group30 - 39 Years
+	  0.12%	Race.and.ethnicity..combined.Hispanic/Latino
+
+
+Time: 149.6 secs
