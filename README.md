@@ -1,4 +1,4 @@
-# covid_machine_learning_model
+# 91% Accurate COVID Risk Prediction with R
 
 C5.0 machine learning model 2 fold cross-validation trained over COVID-19_Case_Surveillance_Public_Use_Data (https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
 - Accuracy: 90.60%
